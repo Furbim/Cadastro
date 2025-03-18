@@ -15,7 +15,7 @@
         android:text="Cadastro de Clientes"
         android:textSize="30sp"
         android:gravity="center"
-        android:layout_margin="15dp"
+        android:layout_margin="10dp"
         android:textColor="@color/azure_x11"
         android:textAllCaps="true">
     </TextView>
@@ -54,7 +54,8 @@
         android:layout_height="wrap_content"
         android:hint="Nome:"
         android:padding="10dp"
-        android:layout_margin="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
         android:textColor="@color/white"
         android:textColorHint="@color/azure_x11"
         android:background="@drawable/rounded_bg"
@@ -79,7 +80,8 @@
         android:layout_height="wrap_content"
         android:hint="Idade:"
         android:padding="10dp"
-        android:layout_margin="30dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="20dp"
         android:textColor="@color/white"
         android:textColorHint="@color/azure_x11"
         android:inputType="number"
@@ -98,6 +100,100 @@
         android:inputType="textPassword"
         android:background="@drawable/rounded_bg"
         ></EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="35dp"
+        android:text="Sexo"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        ></TextView>
+
+    <RadioGroup
+        android:id="@+id/rg_sexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_sexoM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            ></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_sexoF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feminino"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_marginHorizontal="20dp"
+            ></RadioButton>
+
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="35dp"
+        android:text="Sexo"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Natação"
+            android:textColor="@color/white"
+            android:textSize="20dp"></CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Musculação"
+            android:textColor="@color/white"
+            android:textSize="20dp"></CheckBox>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zumba"
+            android:textColor="@color/white"
+            android:textSize="20dp"></CheckBox>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:text="Receber emails com novidades">
+
+    </com.google.android.material.materialswitch.MaterialSwitch>
+
 
     <Button
         android:id="@+id/btn_cadastro"
