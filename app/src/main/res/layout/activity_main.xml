@@ -161,6 +161,7 @@
         android:orientation="horizontal">
 
         <CheckBox
+            android:id="@+id/ckb_natacao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Natação"
@@ -168,6 +169,7 @@
             android:textSize="20dp"></CheckBox>
 
         <CheckBox
+            android:id="@+id/ckb_musculacao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Musculação"
@@ -175,6 +177,7 @@
             android:textSize="20dp"></CheckBox>
 
         <CheckBox
+            android:id="@+id/ckb_zumba"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Zumba"
@@ -185,6 +188,7 @@
     </LinearLayout>
 
     <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/swt_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="30dp"
